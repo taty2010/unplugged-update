@@ -1,0 +1,1201 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==============
+	HEADER
+	=============*/
+
+body, html {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+    font-size:16px;
+	display: flex;
+}
+
+body {
+	background-color: #252323;
+	margin: auto;
+	font-size: 0.875em;	
+	height: 100%;
+	
+}
+
+a {
+     font-weight: 700;
+     color: #23a4cc;
+     text-decoration: none;
+}
+
+img { 
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	opacity: 0.5
+}
+
+img:hover {opacity: 1}
+
+p {
+ font-size: 1em;
+ line-height: 1.4;
+	color: #fff;
+}
+
+h1, h2, h3, h4 {
+ font-weight: 700;
+	color: #fff;
+}
+
+header, #header-wrapper {
+	height: 100%;
+	display: flex;
+	background-color: #252323;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-weight: 600;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+}
+
+header, #header-wrapper {
+	width: 96%;
+	margin: auto;
+}
+
+.logo  {
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	margin: auto;
+	background-color: #252323;
+}
+
+nav {	
+	background-color: #252323;
+	margin: auto;	
+}
+
+nav i {
+	padding-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+
+header nav ul li a {
+	color: #FFF;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+
+.about-link {
+	height: 62px;
+	margin: auto;	
+}
+
+.faq-link {
+	height: 62px;
+	margin: auto;
+}
+
+/****** TO HIGHLIGHT CURRENT PAGE LINK ******/
+
+a.about:link, a.about:visited {
+  color: #ff1256;
+}
+
+a.faq:link, a.faq:visited{
+  color: #ff1256;
+}
+
+/* ==============
+	MAIN CONTENT
+	=============*/
+
+.hero-area {
+	width: 96%;
+	height: 100%;
+	max-height: 350px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	background-image: url(../img/top-story-photo2.jpg);
+	 -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-size: cover;
+	margin: auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	
+}
+
+.hero-img {
+	width: 100%;
+	margin: 10px 0;	
+}
+
+h3 {
+	font-size: 1.142em;
+}
+
+h2 {
+	font-size: 1.5em
+}
+
+.top-info p {
+	text-align: justify;
+	padding: 0 20px;
+	color: #faf5f7;
+}
+
+.top-story h1 {
+	font-size: 3em;
+	font-weight: 700;
+	color: #fff;
+	margin: auto;
+	padding: 0 20px;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 3px;
+}
+
+/* ====================
+	 ABOUT PAGE CONTENT
+	====================*/
+
+.contact-us {
+	margin: auto;
+	font-size: 1.143em;
+	padding-left: 10%;
+}
+
+#about-heading ul li {
+	display: inline-block;
+	line-height: 2em;
+}
+
+/**** MAP ***/
+
+.map {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+}
+
+.map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.mission-statement {
+	width: 90%;
+	margin: auto;
+	padding-left: 1%;
+}
+
+
+#team h3 {
+	margin: none;
+	padding-left: 40px
+}
+
+.team-1, .team-2, .team-3 {
+	height: 200px;
+	margin-bottom: 15%;
+}
+
+.team-img {
+	width: 40%;
+   padding-bottom: 40%;
+   float: left;
+   margin-right: 20px;
+	margin-left: 5%;
+   border: 1px solid #ccc;
+	
+}
+
+#team-img-jack {
+	background: #333 url(../img/team-jack.png) no-repeat center;
+	background-size: cover;	
+}
+
+#team-img-lana {
+	background: #333 url(../img/team-lana.png) no-repeat center;
+	background-size: cover;	
+}
+
+#team-img-willow {
+	background: #333 url(../img/team-willow.png) no-repeat center;
+	background-size: cover;	
+}
+
+
+.team-name {
+	font-size: 1.187em;
+	padding-top: 10px;
+	
+}
+
+.team-title {
+	font-size: 0.875em;	
+	line-height: 1px;
+}
+
+.team-description {
+	display: none;
+}
+
+/*********************/
+
+
+/* ====================
+	 FAQ PAGE CONTENT
+	====================*/
+
+#faqs-page {
+	width: 93%;
+	margin: auto;
+	padding-bottom: 90px;
+	margin-bottom: 30px;
+	border-bottom: #cfcacb 1px solid;;
+}
+
+#faqs-page h1 {
+	font-size: 1.312em;
+}
+
+#faqs-page h5 {
+	font-size: 1em;
+}
+
+/*********************/
+/* ==============
+	MAIN SIDEBAR
+	=============*/
+
+#sidebar {
+	padding: 10px;
+	color: #FFF;
+}
+.sign-up, .btn {
+	width: 98%;
+	height: 40px;
+}
+
+.btn, .btn2, .btn3 {
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 10px 0 20px 0;
+	text-transform: uppercase;
+  	transition-delay: 0.1s;
+	
+}
+
+.btn:hover {opacity: 0.5} 
+.btn2:hover {opacity: 0.5} 
+.btn3:hover {opacity: 0.5}
+
+.btn {
+	background: #350f22;
+}
+
+
+form {
+	border-bottom: #cfcacb 1px solid;
+}
+
+
+.sidebar-about {
+	 display: none;
+	/**** display:none; hides content and space occupied ******/
+	
+}
+
+.sidebar-faqs {
+	 display: none;
+	
+}
+
+/* ==============
+		FEED
+	=============*/
+
+.feed-p {
+	display: none;
+}
+ 
+.feed-1,
+.feed-2, 
+.feed-3, 
+.feed-4, 
+.feed-5, 
+.feed-6 {
+	width: 95%;
+	height: 100%;
+	border-bottom: #cfcacb 1px solid;
+	padding: 0 20px;
+	background-color:rgba(255,43,84,0.20);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+}
+
+.news img {
+	height: 100%;
+}
+
+.feed-img, .feed-img-6{
+	margin: auto;
+	
+	
+}
+
+.feed-img-6 {
+	padding-bottom: 90px;
+}
+
+.arcade-fire {
+	display: none;
+}
+/* ==============
+	FOOTER
+	=============*/
+
+footer {
+	width: 100%;
+	display: flex;
+	border-top: #cfcacb 1px solid;
+	padding-top: 5%;
+	margin-top: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	
+}
+
+.footer-img {
+	width: 50%;
+	margin: auto;
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/*============
+	TABLET
+	==========*/
+@media all and (min-width:768px){
+	
+	html {
+    	font-size:14px;
+	}
+
+	body {
+		font-size: 1em;	
+	}
+	
+	header {
+		width: 100%;
+	}
+
+ 	#header-wrapper {
+		width: 100%;
+		overflow: auto;
+		background-color: #252323;
+	}
+
+	.logo  {
+		float: left;
+		max-width: 330px;
+		padding: 0 0 0 2.3%;
+	}
+	
+	nav ul {
+		float: right;
+		padding: 20px 80px 0 0;
+	}
+
+	nav ul li {
+		display: inline-block;
+		padding-left: 20px;
+		
+	}
+	
+	.about-link, .faq-link {
+		border: none;
+	}
+	
+	.hero-area{
+		max-height: 100%;
+		width: 96%;
+		padding: 2%;
+	
+}
+	
+	
+	
+	 .hero-img {
+		width: 57%;
+		padding-right: 6%;
+		max-width: 456px;
+		float: left;
+	}
+	
+	.top-story {
+		width: 100%;
+		float: left;
+		border: none;
+		padding-bottom: 5%;
+	}
+	
+	
+	#sidebar {
+		clear: both;
+		float: right;
+		width: 36%;
+	}
+	
+	.news{
+		width: 100%;
+		height: 500px;
+	}
+	
+	.feed-1, 
+	.feed-2, 
+	.feed-3, 
+	.feed-4, 
+	.feed-5, 
+	.feed-6 {
+		width: 57%;
+		border-bottom: #cfcacb 1px solid;
+		padding-left: 1%;
+	}
+	
+	.feed-img {
+		width: 35%;
+	}
+	
+	
+	.arcade-fire {
+		display: inherit;
+	}
+	
+	.sidebar-about,
+	.sidebar-faqs{
+		display:inherit;
+	}
+	
+	.feed-6 {
+		border: none;
+	}
+	
+	.btn2, .btn3 {
+		width: 100%;
+		height: 37px;
+		background: #350f22;	
+	}
+	
+	footer {
+		border-top: #cfcacb 1px solid;
+		background: none;
+	}
+	
+	.footer-img {
+		padding-top: 2%;
+		max-width: 200px;
+	}
+	
+	/* ===============
+	 ABOUT PAGE TABLET
+	================*/
+
+	.contact-us {
+		padding-left: 20px;
+		padding-bottom: 190px;
+		float: left;
+	}
+
+	#about-heading ul li {
+		display: inline-block;
+		line-height: 2em;
+	}
+
+	.brooklyn {
+		padding-left: 80px;
+	}
+		
+		.map  {
+		position: relative;
+		padding-bottom: 30%;
+		height: 0;
+		overflow: hidden;
+	}
+	
+	.map iframe {
+	position: absolute;
+	top:10%;
+	left: 30%;
+	width: 100%;
+	height: 100%;
+}
+
+	.mission-statement {
+		clear: both;
+		border-top: #cfcacb 1px solid;
+		border-bottom: #cfcacb 1px solid;
+		padding-bottom: 25px;
+	}	
+	
+	.team-img {
+		width: 30%;
+		padding-bottom: 30%;
+		float: left;
+		margin-right: 20px;
+		margin-left: 5%;
+		border: 1px solid #ccc;
+	}
+
+	#team {
+		border-bottom: none;	
+	}
+
+
+/*********************/
+
+	/* ====================
+	 FAQ PAGE TABLET
+	====================*/
+
+	#faqs-page {
+		border-bottom: none;
+	}
+	
+	.faq-1, .faq-2, .faq-3 {
+		border-bottom: #cfcacb 1px solid;
+		padding-bottom: 30px;
+	}
+
+	#faqs-page h1 {
+		font-size: 1.5em;
+	}
+
+	#faqs-page h5 {
+		font-size: 1.25em;
+		font-weight: lighter;
+	}
+
+}
+
+@media all and (min-width:940px) {
+	
+	.top-story h1 {
+		font-size: 3.25em;
+		line-height: 35px;
+		line-height: 50px;
+	}
+	
+	h2 {
+		font-size: 1.875em;
+	}
+	
+	h3 {
+		font-size:  1.312em;
+		
+	}
+	
+	h4 {
+		font-size: 0.75em;
+		font-weight: 700;
+	}
+	
+	p {
+		font-size: 1em;
+	}
+	
+	.hero-area{
+		width: 96%;
+		padding: 2%;
+		width: 96%;
+		height: 100%;
+		max-height: 530px;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-flow: row wrap;
+		margin: auto;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	}
+	
+	 .hero-img {
+		width: 100%;
+		padding-right: 5%;
+		max-width: 630px;
+	}
+	
+	.top-story {
+		width: 65%;
+		border: none;
+		padding-bottom: 5%;
+		padding-right: 3%;
+		float:left;
+	}
+	
+	.top-story {}
+	
+	.top-info {
+		float: left;
+	}
+	
+	
+	#sidebar {
+		width: 20%;
+		clear: none;
+	}
+	
+	#sidebar h2 {
+		font-size: 1.5em;
+		color: #fff;
+	}
+	
+	.news{
+		width: 100%;
+		height: 100%;
+		clear: both;
+		margin: auto;
+		display: flex;
+		flex-flow: row wrap;
+		margin: auto;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	}
+	
+	.news h3 {
+		height: 75px;
+		font-size: 1.1em;
+		color: #fff;
+		text-align: center;
+	
+	}
+	
+	.news p {
+		display: none;
+	}
+	
+	.recent-news {
+		clear: both;
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+		
+	}
+	.feed-1, 
+	.feed-2, 
+	.feed-3, 
+	.feed-4, 
+	.feed-5, 
+	.feed-6 {
+	display: flex;
+	justify-content:center;
+	align-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    border-radius: 10px;
+	margin-left: 90px;
+	padding: 0;
+    width: 300px;
+    height: 300px;
+	margin-top: 50px;
+		
+	}
+	
+	
+	.feed-img {
+		width: 100%;
+		
+	}
+	
+	
+	.arcade-fire {
+		display: inherit;
+	}
+	
+	.feed-p {
+		display: inherit;
+	}
+	
+	.sidebar-about,
+	.sidebar-faqs{
+		display:inherit;
+	}
+	
+	.feed-6 {
+		border: none;
+	}
+	
+	.btn, .btn2, .btn3 {
+		width: 80%;
+		height: 35px;
+		padding: 10px 0 20px 0;
+		border: none;
+	}
+	
+	.sign-up{
+	width: 90%;
+	height: 35px;
+	border: none;
+	align-content: center;
+	}
+	
+	form {
+		border: none;
+		align-content: center;
+	}
+
+	footer {
+		clear: both;
+		border-top: #cfcacb 1px solid;
+		background: none;
+			width: 100%;
+		height: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	}
+	
+	.footer-img {
+		padding-top: 2%;
+		max-width: 200px;
+	}
+	
+	/* ===============
+	 ABOUT PAGE DESKTOP
+	================*/
+
+	.contact-us {
+		padding-left: 20px;
+		padding-bottom: 190px;
+		float: left;
+	}
+	
+	.contact-us h2 {
+		font-size: 1.875em;
+	}
+
+	#about-heading ul li {
+		display: inline-block;
+		line-height: 2em;
+		font-size: 1.31em;
+	}
+
+	.brooklyn {
+		padding-left: 80px;
+	}
+		
+	.map  {
+		position: relative;
+		padding-bottom: 35%;
+		height: 0;
+		overflow: hidden;
+		right: 10%;
+	}
+	
+	.map iframe {
+		position: absolute;
+		top:10%;
+		left: 30%;
+		width: 100%;
+		height: 100%;
+	}
+
+	.mission-statement {
+		width: 96%;
+		clear: both;
+		border-top: #cfcacb 1px solid;
+		border-bottom: #cfcacb 1px solid;
+		padding-bottom: 25px;
+		margin-top: 30px;
+	}
+	
+	.mission-statement h2, 
+	#team h3  {
+		font-size: 1.875em;
+	}
+	
+	.mission-statement p {
+		font-size: 1em;
+	}
+
+	#team h4 {
+		font-size: 1.312em;
+	}
+	
+	#team h5 {
+		font-size: 1em;
+		font-weight: lighter;
+	}
+
+	#team {
+		border-bottom: none;	
+	}
+	
+	.team-1, .team-2, .team-3 {
+		height: 120px;
+		padding-bottom: 90px;
+	}
+
+	.team-img {
+		width: 20%;
+		padding-bottom: 17%;
+		float: left;
+		margin-right: 20px;
+		margin-left: 2%;
+		border: 1px solid #ccc;
+	}
+	
+	.team-description {
+		display: inherit;
+	}
+
+/*********************/
+
+	/* ====================
+	 FAQ PAGE DESKTOP
+	====================*/
+
+	#faqs-page {
+		border-bottom: none;
+	}
+	
+	.faq-1,
+	.faq-2, 
+	.faq-3 {
+		border-bottom: #cfcacb 1px solid;
+		padding-bottom: 30px;
+	}
+
+	#faqs-page h1 {
+		font-size: 1.875em;
+	}
+
+	#faqs-page h5 {
+		font-size: 1.5em;
+		font-weight: lighter;
+	}
+	
+	#faqs-page p {
+		font-size: 1.167em;
+	}
+	
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+.sign-up {
+}
